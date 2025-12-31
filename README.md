@@ -1,5 +1,5 @@
 # pyMPI
-This is the repository for py-MPI: a simulation toolbox for Magnetic Particle Imaging (will be updated). This project is based upon code from Shen et al (https://doi.org/10.1016/j.cmpb.2024.108250).
+This is the repository for py-MPI: a simulation toolbox for Magnetic Particle Imaging (ongoing project). This project is based upon code from Shen et al (https://doi.org/10.1016/j.cmpb.2024.108250).
 
 # How to run:
 1) Download the code and store it in a folder.
