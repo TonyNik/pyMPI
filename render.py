@@ -3,7 +3,7 @@ import napari
 import matplotlib.pyplot as plt
 
 import numpy as np
-
+from typing import Optional, Tuple, Union, Any, Mapping
 
 
 """
@@ -11,13 +11,13 @@ import numpy as np
 Key features:
 - One napari window, Phantom + Reconstruction side-by-side (grid mode).
 - Overlay handling that WON'T spam the canvas:
-  - If overlay_text is a dict (e.g. your "Message"), it auto-summarizes.
+  - If overlay_text is a dict (e.g. "Message"), it auto-summarizes.
   - If overlay_text is a long string, it auto-truncates.
   - NEEDS FURTHER OPTIMIZATION
 """
 
 
-from typing import Optional, Tuple, Union, Any, Mapping
+
 
 
 ArrayLike3D = Union[np.ndarray]

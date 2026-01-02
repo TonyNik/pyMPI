@@ -280,7 +280,7 @@ class ScannerClass(DataBaseClass):
         S = np.diag([0.0, -G, +G])   # eigenvalues: 0 (line dir), -G (in-plane normal), +G (z)
         return R @ S @ R.T
 
-    # ======== (REPLACED) build per-angle GSc by the paper-true tensor ========
+    # ======== (REPLACED) build per-angle GSc by the paper tensor ========
     def _build_GSc_FFL_theta(self, theta, G):
         """
         Paper-true selection field:
@@ -301,7 +301,7 @@ class ScannerClass(DataBaseClass):
                     GScθ[i, j, k, :] = M @ r
         return GScθ
 
-    # ======== stack budgeting + uniform drive that moves the FFL ========
+    # ======== stack budgeting  ========
     def _build_ffl_true_stack_drive(self):
         """
         Paper-true 3D FFL stack:
@@ -413,7 +413,7 @@ class ScannerClass(DataBaseClass):
         print(f"[FFL-BOOK] z_slices={Nz_goal}/{self._Nz} angles/slice={NTH} s-bins/slice={Ns} "
               f"samples_used={self._samples_used} Fn={self._Fn}")
 
-    # ======== (UNCHANGED numerically, but now uses the paper-true GSc_bank) ========
+
     def _get_Voltage_CPU_FFL_true(self):
         """
         s̃θ(t) ≈ trace(A_h[X_{eθ}[ρ]])(r(t)) · v(t)

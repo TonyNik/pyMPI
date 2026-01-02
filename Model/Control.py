@@ -19,7 +19,7 @@ def get_ReconImg(tt, dt, ms, cn,
                  index=0,
                  trajectory_type="3D"):
     """
-    Original top-level pipeline entry.
+    Original pipeline entry.
     Builds Phantom & Scanner, (optionally) applies interference,
     runs reconstruction, and returns (ImgStru, OrgImgData, Message).
     """

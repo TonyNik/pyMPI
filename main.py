@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
 """
-cli_simulation.py
 
 A command-line version of the Magnetic Particle Imaging (MPI) simulation tool.
 This script uses the core simulation modules (Control.py, Phantom.py, Scanner.py,
 XRecon.py, and Interference.py) to generate simulation data and display results using
 VTK (for volume rendering) and matplotlib (for 2D projections).
 
-Usage:
-    python cli_simulation.py [options]
-
-Example:
-    python cli_simulation.py --particle_dia 27 --particle_sat 1 --mode generate
 """
 
 import sys
